@@ -4,62 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Nanum+Gothic:wght@400;700&display=swap"
+    rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="./assets/reset.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
-
+    
     <title>Damien's Portfolio</title>
 </head>
 <body>
     <!-- header + nav bar -->
     <header>
-        <div class="container container-nav">
-        <div class="links-styling">
-            <h1>My name is <span class="exaggerate">Damien Shoemake</span></h1>
-        </div>
-            <nav>
-                <ul class="links">
-                    <li><a href='#about-me'>About Me</a></li>
-                    <li><a href='#projects'>Projects</a></li>
-                    <li><a href='#contact-me'>Contact Me</a></li>
-                    <li><a href=https://github.com/Damien-Shoemake target='_blank'>Github</a></li>
-                </ul>
-            </nav>            
-        </div>
+        <div class="container nav-container">
+            <h3>Hi! My name is</h3> 
+            <h1><span class="exaggerate">Damien Shoemake</span></h1>
+        
+                <nav>
+                <div class="table">
+                    <ul id="links">
+                        <li><a href='#about-me'>About Me</a></li>
+                        <li><a href='#projects'>Projects</a></li>
+                        <li><a href='#contact-me'>Contact Me</a></li>
+                        <li><a href=https://github.com/Damien-Shoemake target='_blank'>Github</a></li>
+                    </ul>
+                </nav>            
+            </div>
+         </div>
     </header>
 
 
     <!-- Figure for the about me with a picture-->
-    <figure id="about-me">
+    <div id="about-me">
         <h2>About Me</h2>
-        <img src="./assets/images/avatar-1577909__480.png" alt="avatar placeholder" id="placeholder-avatar"/>
-        <figcaption>I am a 27-year-old lifelong Austinite who has always had a passion for learning how things work and technology. I'm taking this coding Bootcamp at the University of Texas in Austin so I can combine those two things together and hopefully come away with a fulfilling career. I strive to make sure that I learn as much as I can, and hope to make websites and applications that are responsive with clean code.</figcaption>
-    </figure>
+        <img src="./assets/images/avatar-1577909__480.png" alt="avatar placeholder" id="picture"/>
+        <p>I am a 27-year-old lifelong Austinite who has always had a passion for learning how things work and technology. I'm taking this coding bootcamp at the University of Texas in Austin so I can combine those two things together and hopefully come away with a fulfilling career. I strive to make sure that I learn as much as I can, and hope to make websites and applications that are responsive with clean code.</p>
+    </div>
 
     <!-- main section -->
-
+    <br></br>
     <main class="content-main" id="projects">
         <h2>Current Projects</h2>
         <p>This is a list of projects that will update throughout the course</p>
 
         <section class="works">
+            <div class="card">
             <a href="https://github.com/Damien-Shoemake/Project01-SuperHardworkingInnovativeTeam" target='_blank' id="project1">
-                <div class="card">
-                    <p>My first project made with collaborators! It focuses on API calls and responsive UI</p>
+                    My first project made with collaborators! It focuses on API calls and responsive UI
                     
-                </div>
-            </a>
+                </a>
+            </div>
 
+            <div class="card">
             <a href="https://github.com/Damien-Shoemake/javascript-password-generator" target="_blank" id="password-generator">
-                <div class="card">
                     A random password generator made with javascript!
-                </div>
-            </a>
+                </a>
+            </div>
 
-            <a href="https://github.com/Damien-Shoemake/workday-planner" target="_blank" id="workday-planner">
-                <div class="card">
+            <div class="card">
+                    <a href="https://github.com/Damien-Shoemake/workday-planner" target="_blank" id="workday-planner">
                     A workday planner that focuses on utilizing local storage! 
-                </div>
-            </a>
+                </a>
+            </div>
 
         </section>
     </main>
@@ -74,10 +82,9 @@
                 <input type="submit" name="submit" value="Email Me">
             </form>
             <form>
-                <input type="call" name="call" id="phone" placeholder="(123) - 456 - 7890">
-                <input type="submit" name="submit" value="Call Me">
-            </form>
-
+                <input type="call" name="call" id="phone" placeholder="(123) 456 - 7890">
+                <input type="submit" name="submit" value="   Call Me ">
+            </form>            
         </div>
     </footer>
     </body>
