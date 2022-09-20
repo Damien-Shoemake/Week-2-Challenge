@@ -10,77 +10,75 @@
     <title>Damien's Portfolio</title>
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- header + nav bar -->
     <header>
-        <nav>
-            <h2 class="logo">
-                Portfolio
-            </h2>
-                <ul>
-                    <li> <a href="#home">Home</a></li>
-                    <li> <a href="#about">About Me</a></li>
-                    <li> <a href="#projects">Projects</a></li>
-                    <li> <a href="#footer">Contact Me</a></li>
+        <div class="container container-nav">
+        <div class="links-styling">
+            <h1>My name is <span class="exaggerate">Damien Shoemake</span></h1>
+        </div>
+            <nav>
+                <ul class="links">
+                    <li><a href='#about-me'>About Me</a></li>
+                    <li><a href='#projects'>Projects</a></li>
+                    <li><a href='#contact-me'>Contact Me</a></li>
+                    <li><a href=https://github.com/Damien-Shoemake' target='_blank'>Github</a></li>
                 </ul>
-                
-        </nav>
+            </nav>            
+        </div>
     </header>
 
-    <figure id="home" class="announcement">
-        <h2>
-            Hello, my name is 
-        </h2>
-        <h1>
-            Damien Shoemake
-        </h1>
 
-
+    <!-- Figure for the about me with a picture-->
+    <figure id="about-me">
+        <h2>About Me</h2>
+        <img src="./assets/images/avatar-1577909__480.png" alt="avatar placeholder" id="placeholder-avatar"/>
+        <figcaption>I am a 27-year-old lifelong Austinite who has always had a passion for learning how things work and technology. I'm taking this coding Bootcamp at the University of Texas in Austin so I can combine those two things together and hopefully come away with a fulfilling career. I strive to make sure that I learn as much as I can, and hope to make websites and applications that are responsive with clean code.</figcaption>
     </figure>
 
-    <!-- About Me Section -->
-    <section class="about-me">
-        <div class="main">
-            <img src="./assets/images/placeholder-image-1.png"/>
-            <h2 id="about">
-                About Me
-            </h2>
-            <p>
-                I am a 27-year-old lifelong Austinite who has always had a passion for learning how things work and technology. I'm taking this coding Bootcamp at the University of Texas in Austin so I can combine those two things together and hopefully come away with a fulfilling career. 
-                I strive to make sure that I learn as much as I can, and hope to make websites and applications that are responsive with clean code.
-            </p>
+    <!-- main section -->
 
-        </div>
+    <main class="content-main" id="projects">
+        <h2>Current Projects</h2>
+        <p>This is a list of projects that will update throughout the course</p>
 
-    </section>
+        <section class="works">
+            <a href="https://github.com/Damien-Shoemake/Project01-SuperHardworkingInnovativeTeam" target='_blank' id="project1">
+                <div class="card">
+                    <p>My first project made with collaborators! It focuses on API calls and responsive UI</p>
+                    
+                </div>
+            </a>
 
-    <!-- Projects section -->
-    <section id="projects" class="works">
-        <div class="card">
-            <h2 class="box">
-                Placeholder project 1
-            </h2>
-        </div>
-        
-        <div class="card">
-            <h2 class="box">
-                Placeholder project 2
-            </h2>
+            <a href="https://github.com/Damien-Shoemake/javascript-password-generator" target="_blank" id="password-generator">
+                <div class="card">
+                    A random password generator made with javascript!
+                </div>
+            </a>
 
-        </div>
+            <a href="https://github.com/Damien-Shoemake/workday-planner" target="_blank" id="workday-planner">
+                <div class="card">
+                    A workday planner that focuses on utilizing local storage! 
+                </div>
+            </a>
 
-    </section>
+        </section>
+    </main>
 
     <footer id="footer">
-        <div class="contact-me">
-            <h2>
-                How to get into contact with me
-            </h2>
+        <div id="contact-me">
+            <h3>
+                Contact Methods
+            </h3>
             <form>
-                <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-                <input type="submit" name="submit" value="Email me!">
+                <input type="email" name="email" id="mail" placeholder="Enter your email">
+                <input type="submit" name="submit" value="Email Me">
+            </form>
+            <form>
+                <input type="call" name="call" id="phone" placeholder="(123) - 456 - 7890">
+                <input type="submit" name="submit" value="Call Me">
             </form>
 
         </div>
     </footer>
-</body>
+    </body>
 </html>
